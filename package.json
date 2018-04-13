@@ -1,0 +1,14 @@
+{
+  "name": "BookStore",
+  "version": "1.0.0",
+  "description": "Interactive experiencewhere users can choose to pick a book to read from a book shelf.",
+  "main": "index.js",
+  "repository": "https://github.com/adarsh04/BookStore.git",
+  "author": "adarsh",
+  "license": "none",
+  "private": false,
+  "dependencies": {
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1"
+  }
+}
