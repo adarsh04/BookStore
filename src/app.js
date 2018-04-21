@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Header from './components/common/Header';
-import Footer from './components/common/Footer';
-//import styled from 'styled-components'; 
+import Header from './components/Header';
+import Footer from './components/Footer';
+import styled from 'styled-components';
 
 class BookStore extends React.Component {
 
-  getCurrentTime() {
+  getCurrentTime = () => {
     let date = new Date();
     return `${date.getDate()}/${date.getMonth()}/${date.getFullYear()}`; 
   }
@@ -14,7 +14,7 @@ class BookStore extends React.Component {
   render() {
     const headerText = "Book Store";
     let footerText = this.getCurrentTime();
-
+    
     return (
       <div>
         <Header headerText={headerText} />
