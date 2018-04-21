@@ -1,3 +1,9 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+import Header from './components/common/Header';
+import Footer from './components/common/Footer';
+//import styled from 'styled-components'; 
+
 class BookStore extends React.Component {
 
   getCurrentTime() {
@@ -16,29 +22,6 @@ class BookStore extends React.Component {
         <Footer footerText={footerText} />
       </div>
     ) 
-  }
-  
-}
-
-//some text to indicate that this is the header of the book store
-class Header extends React.Component {
-  render() {
-    return (
-      <div>
-        <h1> {this.props.headerText} </h1>
-      </div>  
-    )
-  }
-}
-
-//text to show the datetime at the bottom of the page
-class Footer extends React.Component {  
-  render() {
-    return (
-      <div>
-        <h4> {this.props.footerText} </h4>
-      </div>  
-    )
   }
 }
 
