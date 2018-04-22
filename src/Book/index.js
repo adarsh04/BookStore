@@ -1,18 +1,25 @@
 import React from 'react';
 import styled from 'styled-components';
+import Modal from '../components/common/Modal'
 import { Img } from './styles'
 
-const openModal = () => {
-  
-}
+class Book extends React.Component {
+  state = {
+    showModal: false
+  }
 
-const Book = () => {
-  return (
-    <div>
-      <Img src="./images/book.jpg" onclick={openModal}/> 
-    </div>
-  )
-    
+  toggleModal = () => {
+    this.setState({ showModal: !this.state.showModal })
+  }
+
+  render() {
+    return (
+      <div>
+        <Img src="./images/book.jpg" onClick={this.toggleModal}/>
+        {this.state.showModal && <Modal toggleModal={this.toggleModal} />}
+      </div>
+    )
+  }
 }
 
 export default Book;

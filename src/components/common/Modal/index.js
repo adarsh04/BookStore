@@ -1,13 +1,15 @@
 import React from 'react';
+import styled from 'styled-components';
+import { ModalDiv, ModalContent, Close } from './styles'
 
 const Modal = (props) => {
   return (
-    <div id="myModal" class="modal">
-      <div class="modal-content">
-        <span class="close">&times;</span>
+    <ModalDiv>
+      <ModalContent>
+        <Close onClick={props.toggleModal}>&times;</Close>
         <p>Some text in the Modal..</p>
-      </div>
-    </div>
+      </ModalContent>
+    </ModalDiv>
   )  
 }
 
