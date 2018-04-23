@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import styled from 'styled-components';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import BookShelf from './BookShelf';
+import { Container } from './styles';
 
 class BookStore extends React.Component {
 
@@ -15,13 +15,15 @@ class BookStore extends React.Component {
   render() {
     const headerText = "Book Store";
     let footerText = `${this.getCurrentTime()} Author: Adarsh Jegadeesan`;
-    const genre = "Mystery";
+    const genres = ["Mystery","Fiction","Romance","Science Fiction"];
     return (
-      <div>
+      <Container>
         <Header headerText={headerText} />
-        <BookShelf genre={genre} />
+        {genres.map((genre) => (
+          <BookShelf genre={genre} />
+        ))}
         <Footer footerText={footerText} />
-      </div>
+      </Container>
     ) 
   }
 }
