@@ -14,7 +14,7 @@ class BookStore extends React.Component {
 
   render() {
     const headerText = "Book Store";
-    let footerText = this.getCurrentTime();
+    let footerText = `${this.getCurrentTime()} Author: Adarsh Jegadeesan`;
     const genre = "Mystery";
     return (
       <div>

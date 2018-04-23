@@ -19,7 +19,7 @@ const BookShelf = (props) => {
   return (
     <Container>
       <Title> {props.genre} </Title>
-      <Book  />
+      <Book bookTitle={"North America"} />
     </Container> 
   )
 }

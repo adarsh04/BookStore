@@ -7,7 +7,7 @@ const Modal = (props) => {
     <ModalDiv>
       <ModalContent>
         <Close onClick={props.toggleModal}>&times;</Close>
-        <p>Some text in the Modal..</p>
+        <p>{props.bookTitle}</p>
       </ModalContent>
     </ModalDiv>
   )  
