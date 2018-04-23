@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Header from './components/common/Header';
-import Footer from './components/common/Footer';
-import Book from './Book';
 import styled from 'styled-components';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import BookShelf from './BookShelf';
 
 class BookStore extends React.Component {
 
@@ -15,12 +15,11 @@ class BookStore extends React.Component {
   render() {
     const headerText = "Book Store";
     let footerText = this.getCurrentTime();
-
+    const genre = "Mystery";
     return (
       <div>
         <Header headerText={headerText} />
-        <Book />
-        <p> This is the book store </p>
+        <BookShelf genre={genre} />
         <Footer footerText={footerText} />
       </div>
     ) 
