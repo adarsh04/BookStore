@@ -6,6 +6,23 @@ import BookShelf from './BookShelf';
 import { Container } from './styles';
 
 class BookStore extends React.Component {
+  state = {
+    genres: []
+  };
+
+  componentDidMount() {
+    this.callApi()
+      .then(res => this.setState({ genres: res.genres }))
+      .catch(err => console.log(err));
+  }
+
+  callApi = async () => {
+    const response = await fetch('/api/genres');
+    const body = await response.json();
+    /*if (response.status !== 200) throw Error(body.message);*/
+    console.log(body);
+    return body;
+  };
 
   getCurrentTime = () => {
     let date = new Date();
@@ -19,8 +36,9 @@ class BookStore extends React.Component {
     return (
       <Container>
         <Header headerText={headerText} />
-        {genres.map((genre) => (
-          <BookShelf genre={genre} />
+        {console.log(this.state.genres)}
+        {this.state.genres.map((genre) => (
+          <BookShelf key={genre} genre={genre} />
         ))}
         <Footer footerText={footerText} />
       </Container>
