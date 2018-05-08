@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Header from './components/Header';
-import Footer from './components/Footer';
-import BookShelf from './BookShelf';
+import Header from './components/common/Header';
+import Footer from './components/common/Footer';
+import BookShelf from './components/BookShelf';
 import { Container } from './styles';
 
 class BookStore extends React.Component {
@@ -12,7 +12,7 @@ class BookStore extends React.Component {
 
   componentDidMount() {
     this.callApi()
-      .then(res => this.setState({ genres: res.genres }))
+      .then(res => console.log(res.data.name))
       .catch(err => console.log(err));
   }
 
@@ -32,7 +32,6 @@ class BookStore extends React.Component {
   render() {
     const headerText = "Book Store";
     let footerText = `${this.getCurrentTime()} Author: Adarsh Jegadeesan`;
-    const genres = ["Mystery","Fiction","Romance","Science Fiction"];
     return (
       <Container>
         <Header headerText={headerText} />

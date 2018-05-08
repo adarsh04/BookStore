@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import Modal from '../components/Modal'
+import Modal from '../common/Modal';
 import { Img } from './styles'
 
 class Book extends React.Component {
