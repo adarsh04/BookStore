@@ -12,16 +12,16 @@ class BookStore extends React.Component {
 
   componentDidMount() {
     this.callApi()
-      .then(res => console.log(res.data.name))
+      .then(data => this.setState({ genres: data.map(genre => genre.name)}))
       .catch(err => console.log(err));
   }
 
   callApi = async () => {
     const response = await fetch('/api/genres');
     const body = await response.json();
+    console.log(body.data);
     /*if (response.status !== 200) throw Error(body.message);*/
-    console.log(body);
-    return body;
+    return body.data;
   };
 
   getCurrentTime = () => {
@@ -35,7 +35,6 @@ class BookStore extends React.Component {
     return (
       <Container>
         <Header headerText={headerText} />
-        {console.log(this.state.genres)}
         {this.state.genres.map((genre) => (
           <BookShelf key={genre} genre={genre} />
         ))}

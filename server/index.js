@@ -7,7 +7,7 @@ const port = process.env.PORT || 5000;
 const Controller = require('./controller');
 
 //router.get('/api/genres', Controller.getAllGenres);
-
+ 
 app.get('/api/genres', (req, res) => {
   db.any('select * from genres')
       .then((data) => {
