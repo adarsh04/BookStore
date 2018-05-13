@@ -1,17 +1,11 @@
 import React from 'react';
-import styled from 'styled-components';
-
-const Title = styled.h1`
-  font-size: 4em;
-  text-align: center;
-  color: #08302F;
-`
+import { HeaderStyle, Title } from './styles';
 
 const Header = (props) => {
   return (
-    <div>
+    <HeaderStyle>
       <Title> {props.headerText} </Title>
-    </div> 
+    </HeaderStyle> 
   )
 }
 
