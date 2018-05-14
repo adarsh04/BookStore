@@ -31,7 +31,7 @@ class BookStore extends React.Component {
 
   render() {
     const headerText = "Book Store";
-    let footerText = `${this.getCurrentTime()} Author: Adarsh Jegadeesan`;
+    let footerDate = this.getCurrentTime();
     return (
       <ThemeProvider theme={mainTheme}>
         <Container>
@@ -41,7 +41,7 @@ class BookStore extends React.Component {
               <BookShelf key={genre} genre={genre} />
             ))}
           </BookShelfContainer>  
-          <Footer footerText={footerText} />
+          <Footer footerDate={footerDate} />
         </Container>
       </ThemeProvider>    
     ) 

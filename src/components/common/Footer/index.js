@@ -1,10 +1,12 @@
 import React from 'react'
-import { FooterStyle, FooterTitle } from './styles';
+import { FooterStyle, FooterDate, FooterTitle } from './styles';
 
 const Footer = (props) => {
+
   return (
     <FooterStyle>
-      <FooterTitle> {props.footerText} </FooterTitle>
+      <FooterDate> {props.footerDate} </FooterDate>
+      <FooterTitle> Adarsh Jegadeesan </FooterTitle>
     </FooterStyle> 
   )
 }

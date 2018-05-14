@@ -4,11 +4,19 @@ const FooterStyle = styled.footer`
   position: fixed;
   width: 100%;
 `
-
-const FooterTitle = styled.h3`
-  font-size: 2em;
-  text-align: center;
-  color: #08302F;
+const FooterDate = styled.p`
+  position: relative;
+  float: left;
+  font-size: ${props => props.theme.fontSize};
+  color: ${props => props.theme.headerFontColor};
 `
 
-export { FooterStyle, FooterTitle }
+const FooterTitle = styled.p`
+  position: relative;
+  float: right;
+  left: -0.6rem;
+  font-size: ${props => props.theme.fontSize};
+  color: ${props => props.theme.headerFontColor};
+`
+
+export { FooterStyle, FooterDate, FooterTitle }

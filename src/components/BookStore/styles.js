@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const mainTheme = {
   fontColor: '#000000',
-  fontSize: '0.875rem',
+  fontSize: '1.25rem',
   headerFontSize: '3.125rem',
   headerFontColor: '#006400',
   buttonColor: '#006400',
