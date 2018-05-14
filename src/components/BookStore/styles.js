@@ -17,7 +17,9 @@ const Container = styled.div`
 const BookShelfContainer = styled.div`
   position: relative;
   top: 5.875rem;
-  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto auto;
   height: 40rem;
+  grid-gap: 0rem 0rem;
 `
 export { Container, BookShelfContainer, mainTheme };

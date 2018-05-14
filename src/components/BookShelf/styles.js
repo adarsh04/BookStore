@@ -6,9 +6,7 @@ const Title = styled.h4`
   color: violetblue;
 `
 
-const Container = styled.section`
-  position: relative;
-  width: 20em;
+const Container = styled.div`
   background: #966F33;
   border-style: solid;
   border-width: 0.125em 0.625em 2rem 0.625em;

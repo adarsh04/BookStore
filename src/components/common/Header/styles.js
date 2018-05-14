@@ -3,6 +3,7 @@ import styled from 'styled-components';
 const HeaderStyle = styled.header`
   position: fixed;
   width: 100%;
+  z-index: 1;
 `
 
 const Title = styled.h1`
