@@ -4,4 +4,5 @@ CREATE TABLE genres (
 );
 
 INSERT INTO genres (ID, name)
-  VALUES (0, 'Romance'), (1, 'Adult Fiction'), (2, 'Mystery'), (3, 'Science Fiction')
+  VALUES (0, 'Romance'), (1, 'Adult Fiction'), (2, 'Mystery'), (3, 'Science Fiction'), 
+  (4, 'Drama'), (5, 'Self help')

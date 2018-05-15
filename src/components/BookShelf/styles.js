@@ -1,15 +1,17 @@
 import React from 'react'
 import styled from 'styled-components';
 
-const Title = styled.h4`
-  font-size: 14px;
-  color: violetblue;
+const Title = styled.div`
+  font-size: 1.69rem;
+  margin-bottom: -2rem;
+  text-align: center;
+  background: #FFFFFF;
 `
 
 const Container = styled.div`
   background: #966F33;
   border-style: solid;
-  border-width: 0.125em 0.625em 2rem 0.625em;
+  border-width: 0rem 0rem 2rem 1.25rem;
   border-color: #180D01;
 `
 

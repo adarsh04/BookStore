@@ -6,8 +6,8 @@ import { Title, Container } from './styles'
 const BookShelf = (props) => {
   return (
     <Container>
-      <Title> {props.genre} </Title>
       <Book bookTitle={"North America"} />
+      <Title> {props.genre} </Title>
     </Container> 
   )
 }
