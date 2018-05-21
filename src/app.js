@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import BookStore from './components/BookStore';
+import { BookStore } from './components/BookStore';
+import { Router } from './router'
+
 
 const appRoot = document.getElementById('app');
-ReactDOM.render(<BookStore />, appRoot)
+ReactDOM.render(Router, appRoot)
