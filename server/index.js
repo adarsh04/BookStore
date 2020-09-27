@@ -25,6 +25,7 @@ app.get('/api/genres', (req, res) => {
   //res.send({ genres : ["Romance", "Science Fiction", "Mystery", "Adult Fiction"] });
 });
 
+
 //module.exports = router;
 
 /*const romance_genre = ["Eleanor and Park", "Time traveller's Wife", 
