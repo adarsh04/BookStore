@@ -17,7 +17,7 @@ class Book extends React.Component {
       <div>
         <Img src="./images/book.jpg" onClick={this.toggleModal}/>
         {this.state.showModal && <Modal toggleModal={this.toggleModal} 
-        bookTitle={this.props.bookTitle} />}
+        bookTitle={this.props.bookTitle} bookImg="./images/bookSample.png"/>}
       </div>
     )
   }

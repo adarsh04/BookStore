@@ -11,9 +11,9 @@ class BookStore extends React.Component {
   };
 
   componentDidMount() {
-    this.callApi()
-      .then(data => this.setState({ genres: data.map(genre => genre.name)}))
-      .catch(err => console.log(err));
+    // this.callApi()
+    //   .then(data => this.setState({ genres: data.map(genre => genre.name)}))
+    //   .catch(err => console.log(err));
   }
 
   callApi = async () => {
